@@ -1,8 +1,14 @@
-let firstNumber = Math.floor(prompt('Write your first number'));
+const firstNumber = Math.floor(prompt('Write your first number'));
 console.log(firstNumber);
-let secondNumber = Math.floor(prompt('Write your second number'));
+let secondNumber = '';
+while (secondNumber <= firstNumber )  {
+  secondNumber = Math.floor(prompt('Write your second number, bigger then first'));
+  if (secondNumber <= firstNumber) {
+    alert('Try again');
+  }
+}
 console.log(secondNumber);
-let check = confirm('Do you want to skip even numbers');
+const check = confirm('Do you want to skip even numbers');
 console.log(check);
 let sum = 0;
 if (check){
@@ -19,7 +25,6 @@ if (check){
     }
 }
   console.log(sum);
-
 let container=document.querySelector("#container");
 container.innerHTML=`
 <p>First number: ${firstNumber};</p>
