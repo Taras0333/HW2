@@ -1,4 +1,10 @@
-const firstNumber = Math.floor(prompt('Write your first number'));
+let firstNumber = 0;
+while (firstNumber <= 0 )  {
+  firstNumber = Math.floor(prompt('Write your first number, bigger then null'));
+  if (firstNumber <= 0) {
+    alert('Try again');
+  }
+}
 console.log(firstNumber);
 let secondNumber = '';
 while (secondNumber <= firstNumber )  {
