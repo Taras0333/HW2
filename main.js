@@ -1,14 +1,14 @@
-let firstNumber = +'';
+let firstNumber = 0;
 while (firstNumber <= 0 || !Number.isInteger(firstNumber))  {
-  firstNumber = +prompt('Write your first integer, bigger then null');
+  firstNumber = Number(prompt('Write your first integer, bigger then null'));
   if (firstNumber <= 0 || !Number.isInteger(firstNumber)) {
     alert('Try again');
   }
 }
 console.log(firstNumber);
-let secondNumber = +'';
+let secondNumber = 0;
 while (secondNumber <= firstNumber|| !Number.isInteger(secondNumber))  {
-  secondNumber = +prompt('Write your second integer, bigger then first');
+  secondNumber = Number(prompt('Write your second integer, bigger then first'));
   if (secondNumber <= firstNumber || !Number.isInteger(secondNumber)) {
     alert('Try again');
   }
@@ -31,7 +31,7 @@ if (check){
     }
 }
   console.log(sum);
-let container=document.querySelector("#container");
+const container=document.querySelector("#container");
 container.innerHTML=`
 <p>First number: ${firstNumber};</p>
 <p>Second number: ${secondNumber};</p>
